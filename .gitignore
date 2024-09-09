@@ -22,6 +22,10 @@ out/
 
 # Maven specific files
 target/
+mvnw
+mvnw.cmd
+.mvnd/
+.mvn/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -53,3 +57,29 @@ out/
 *.iml
 
 # OS specific files
+.DS_Store
+Thumbs.db
+
+# Java-specific excludes
+*.class
+*.jar
+*.war
+*.ear
+*.javadoc
+*.classdiagram
+*.hprof
+hs_err_pid*
+
+# Bytecode for Android apps
+*.dex
+
+# Android Studio generated files and folders
+.idea
+.gradle
+local.properties
+/.cxx/
+.cxx/
+
+# Maven Wrapper files
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
