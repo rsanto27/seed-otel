@@ -1,10 +1,10 @@
-package br.com.seed.otel.app1;
+package br.com.seed.otel.app2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SeedOtelApplicationTests {
+class App2ApplicationTests {
 
 	@Test
 	void contextLoads() {
