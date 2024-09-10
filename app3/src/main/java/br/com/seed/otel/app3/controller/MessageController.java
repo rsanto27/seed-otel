@@ -1,6 +1,5 @@
-package br.com.seed.otel.app1.controller;
+package br.com.seed.otel.app3.controller;
 
-import br.com.seed.otel.app1.feign.App2Integration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,12 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageController {
 
-    @Autowired
-    private App2Integration app2Integration;
 
-    @GetMapping("app1/{message}")
+    @GetMapping("app3/{message}")
     public String getMessage(@PathVariable("message") String message){
-        String message2 = message + "2";
-        return app2Integration.getMessage(message2);
+        return message;
     }
 }
