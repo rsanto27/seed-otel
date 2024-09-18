@@ -1,16 +1,11 @@
-version: '3.8'
-
+version: "3"
 services:
   zipkin:
-    image: openzipkin/zipkin:latest
-    container_name: zipkin
-    ports:
-      - "9411:9411"
-    environment:
-      - STORAGE_TYPE=mem
+    image: openzipkin/zipkin-slim:latest
     networks:
-      - zipkin-network
+      - otelcol
+    ports:
+      - "9412:9411"
 
 networks:
-  zipkin-network:
-    driver: bridge
+  otelcol:
